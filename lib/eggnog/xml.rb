@@ -32,8 +32,8 @@ module Eggnog
         raise ArgumentError, "+xml+ must be instance of String"
       end
 
-      xml = xml.gsub(/([\302|\240|\s|\n|\t])|(\&nbsp;?){1,}/, ' ').strip
-
+      xml = xml.gsub(/([\u0080-\u0101\s\n\t])|(\&nbsp;?){1,}/, ' ').strip        
+      
       unless xml.length > 0
         return {}
       end
