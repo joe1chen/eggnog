@@ -25,7 +25,7 @@ Gem::Specification.new do |gem|
 
   runtime_dependencies = {
     "ox" => "~> 1.6.0",
-    "nokogiri" => "~> 1.5.5",
+    "nokogiri" => ">= 1.5",
     "oj" => "~> 1.3.4"
   }
 
